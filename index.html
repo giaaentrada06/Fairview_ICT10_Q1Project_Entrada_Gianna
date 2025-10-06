@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Nook Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/1200x/8e/ed/54/8eed548670f115f05ee16f55e6ca5e97.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container { margin-top: 40px; }
+        .bg-glass {
+            background: rgba(225, 225, 225, 0.912);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark background-image= bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Book Nook</a>
+        <div>
+          <a class="nav-link text-white" href="order.html">Order</a>
+          <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="bg-glass">
+            <h1 class="mt-4 text-center">Welcome to Book Nook!</h1>
+            <p class="text-center">Your favorite place for books and book nooks.</p>
+            <div class="text-center bg-light p-3 rounded mb-4">
+                <h2 id="storename" style="color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger; font-weight: bold;"></h2>
+                <p id="ownerName" style="color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></p>
+                <p id="yearFounded" style="color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></p>
+            </div>
+            <div class="card mt-4">
+                <div class="card-header bg-dark text-white text-center">Featured Books & Nooks</div>
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem; margin: 10px;">
+                                <img src="https://static-ppimages.freetls.fastly.net/nielsens/9781398536517.jpg?canvas=300,300&fit=bounds&height=300&mode=max&width=300&404=default.jpg" class="card-img-top" alt="Book 1" style="width: 285px; height: 300px;">
+                                <div class="card-body">
+                                    <h6 class="card-title text-center">Better than the movies (₱ 540.20)</h6>
+                                    <a href="https://a.co/d/hiR7Yg3" class="btn btn-primary w-100">Buy now!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem; margin: 10px;">
+                                <img src="https://cdn.kobo.com/book-images/f162530c-1e6b-4d7c-abfb-374cb8b983d5/1200/1200/False/the-song-of-achilles.jpg" class="card-img-top" alt="Book 2" style="width: 285px; height: 300px;">
+                                <div class="card-body">
+                                    <h6 class="card-title text-center">The Song of Achilles (₱ 500.20)</h6>
+                                    <a href="https://a.co/d/ihUp5WF" class="btn btn-primary w-100">Buy now!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem; margin: 10px;">
+                                <img src="https://m.media-amazon.com/images/I/911EjE2+63L._SY466_.jpg" class="card-img-top" alt="Book 3" style="width: 285px; height: 300px;">
+                                <div class="card-body">
+                                    <h6 class="card-title text-center">The Six of Crows (₱ 400.70)</h6>
+                                    <a href="https://a.co/d/dzlJcuuv" class="btn btn-primary w-100">Buy now!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="py" src="sec.py"></script>
+</body>
+</html>
